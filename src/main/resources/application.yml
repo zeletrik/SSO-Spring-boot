@@ -1,0 +1,13 @@
+openam:
+  client:
+    clientId: openAM-oauth2-client-id
+    clientSecret: openAM-oauth2-client-secret
+    accessTokenUri: http://localhost:8009/openam/oauth2/realms/root/access_token
+    userAuthorizationUri: http://localhost:8009/openam/oauth2/realms/root/authorize
+    scope: openid
+  resource:
+    userInfoUri: http://localhost:8009/openam/oauth2/realms/root/tokeninfo
+
+logging:
+  level:
+    org.springframework.security: DEBUG
